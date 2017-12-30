@@ -1,0 +1,67 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Raleway', sans-serif !important;
+	color: #fff;
+}
+/* ----Presentación-Lyfth-----*/
+.container-flex-column {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2em;
+}
+
+.container-flex-row {
+	display:flex;
+ 	justify-content: space-between;
+}
+.vh100{
+	height: 100vh;
+}
+
+.grad60 {
+	background: linear-gradient(rgb(83, 0, 96)10%, rgb(205, 9, 131));
+}
+
+.fond-image {
+	background-image: url(../assets/images/movil.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.buttons-register {
+	padding: 1em ;
+	margin-left: 6em;
+
+}
+
+.btn-default {
+	/*padding: 0.5em;*/
+	margin-bottom:  5px;
+	background: rgba(0,0,0, 0.1);
+	border: 1px solid #fff;
+	color: #fff;
+	width: ;
+	font-size: 20px;
+
+}
+.title {
+	padding:0.5em;
+	margin-bottom: 1em;
+}
+.logo {
+	height: inherit;
+}
+.logo1 {
+	height: 50px;
+	margin-left: 25vh;
+}
+.logo2 {
+	height: inherit;
+  margin-bottom: 1em;
+}
+.
