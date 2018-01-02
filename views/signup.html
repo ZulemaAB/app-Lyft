@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="icon" href="../assets/images/icon.ico">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Lyft</title>
+</head>
+<body class="grad vh100">
+  <header>
+    <div class="slide-buttons container-flex-row">
+      <a href="register.html" type="button" class="btn btn-return">
+      <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="container-flex-column text-center">
+      <h1 class="title">Sing Up</h1>
+      <h4>Join now for free ride credit</h4>
+      <hr>
+    </div>
+  </header>
+
+  <section class="container">
+    <div class="row">
+      <form class="col-xs-12">
+        <div class="form-group">
+          <label for="country">Country :</label>
+          <select class="select-country" data-live-search="true">
+            <option>Perú</option>
+            <option>Colombia</option>
+            <option>Brasil</option>
+            <option>México</option>
+            <option>EE.UU</option>
+            <option>Otros.</option>
+          </select>
+          <div class="cellphone">
+            <label for="cellphoneNumber">N° Cellphone :</label>
+            <input type="phoneNumber" class="form-control" id="CellphoneNumber" placeholder="52">
+          </div>
+          <br>
+          <h5 class="text-center subt-signup">We´ll send a text to verify your phone</h5>
+      </form>
+    </div>
+      </div>
+  </section>
+
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col-xs-10">
+        <button type="submit" id="signup" class="btn  btn-signup" disabled>NEXT</button>
+
+      </div>
+
+    </div>
+  </footer>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+  <script src="../js/signup.js"></script>
+
+</body>
+</html>
