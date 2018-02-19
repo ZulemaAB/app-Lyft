@@ -1,18 +1,26 @@
-// Activando CellphoneNumber
+// Inicializando Select Flags-Materialize
 $(document).ready(function() {
-  var $phoneNumber = $('#CellphoneNumber');
+  $('select').material_select();
+});
+// Activando botón (10 digitos) para continuar
+$(document).ready(function() {
+  var $telPhone = $('#telephone');
+  var $btnNext = $('#next');
 
-  // Variable verificadora  booleano
-  var verifyPhoneNumber = false;
-
-  // Asociar eventos a los elemento seleccionados
-  $phoneNumber.on('input', function(event) {
+  $telPhone.keyup(function() {
     if ($(this).val().length === 10) {
-      // console.log('cellphone valido');
-      $('#signup').addClass('disabled');
-      $('#signup').removeClass('disabled');
+      $btnNext.attr({
+        disabled: false,
+        href: '../views/verify.html'
+      });
     } else {
-      console.log('el cellphone debe ser igual a 10 caracteres');
+      $btnNext.attr('disabled', 'disabled');
     }
+  });
+  // Código aleatorio
+  $btnNext.click(function() {
+    var number = Math.floor(Math.random() * 900) + 100;
+    alert('LAB - ' + number);
+    localStorage.labCode = number;
   });
 });
